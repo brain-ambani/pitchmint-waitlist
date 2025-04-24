@@ -2,7 +2,7 @@
 import { FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 
 export default function ShareButtons() {
-  const shareUrl = "https://pitchmint.vercel.app";
+  const shareUrl = "https://pitchmint-waitlist.vercel.app/";
 
   return (
     <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
