@@ -19,11 +19,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "PitchMint — Smarter Outreach Starts Here",
     description: "Join our waitlist...",
-    url: "https://pitchmint.vercel.app",
+    url: "https://pitchmint-waitlist.vercel.app/",
     siteName: "PitchMint",
     images: [
       {
-        url: "https://pitchmint.vercel.app/og-image.png",
+        url: "https://pitchmint-waitlist.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "PitchMint Waitlist",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "PitchMint — Smarter Outreach Starts Here",
     description: "Join the waitlist for personalized DMs.",
-    images: ["https://pitchmint.vercel.app/og-image.png"],
+    images: ["https://pitchmint-waitlist.vercel.app/og-image.png"],
   },
 };
 
