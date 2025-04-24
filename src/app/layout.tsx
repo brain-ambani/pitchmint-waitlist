@@ -13,14 +13,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const siteMetadata = {
+export const metadata: Metadata = {
   title: "PitchMint — Smarter Outreach Starts Here",
-  description:
-    "Join the waitlist for PitchMint, the tool that helps creators & founders send personalized outreach across platforms.",
+  description: "Join the waitlist for PitchMint...",
   openGraph: {
     title: "PitchMint — Smarter Outreach Starts Here",
-    description:
-      "Join our waitlist for smarter outreach across Twitter, LinkedIn & email.",
+    description: "Join our waitlist...",
     url: "https://pitchmint.vercel.app",
     siteName: "PitchMint",
     images: [
@@ -36,13 +34,10 @@ export const siteMetadata = {
   twitter: {
     card: "summary_large_image",
     title: "PitchMint — Smarter Outreach Starts Here",
-    description: "Join the waitlist for personalized cross-platform DMs.",
+    description: "Join the waitlist for personalized DMs.",
     images: ["https://pitchmint.vercel.app/og-image.png"],
   },
 };
-
-// ✅ Tell Next.js to use this metadata
-export const metadata: Metadata = siteMetadata;
 
 export default function RootLayout({
   children,
