@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 
 export default function ShareButtons() {
@@ -6,7 +7,7 @@ export default function ShareButtons() {
 
   return (
     <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-      <a
+      <Link
         href={`https://twitter.com/intent/tweet?text=🚀 Just joined the waitlist for PitchMint — the smartest outreach tool! Join here: ${shareUrl}`}
         target="_blank"
         rel="noopener noreferrer"
@@ -14,8 +15,8 @@ export default function ShareButtons() {
       >
         <FaXTwitter size={16} />
         Share on X (Twitter)
-      </a>
-      <a
+      </Link>
+      <Link
         href={`https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`}
         target="_blank"
         rel="noopener noreferrer"
@@ -23,7 +24,7 @@ export default function ShareButtons() {
       >
         <FaLinkedinIn size={16} />
         Share on LinkedIn
-      </a>
+      </Link>
     </div>
   );
 }
