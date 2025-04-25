@@ -9,6 +9,16 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
+import confetti from "canvas-confetti";
+
+const fireConfetti = () => {
+  confetti({
+    particleCount: 80,
+    spread: 70,
+    origin: { y: 0.6 },
+  });
+};
+
 export default function WaitlistForm({ onSuccess }: { onSuccess: () => void }) {
   const [loading, setLoading] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
@@ -31,11 +41,9 @@ export default function WaitlistForm({ onSuccess }: { onSuccess: () => void }) {
     setLoading(false);
 
     if (res.ok) {
+      fireConfetti();
       setSuccessMessage("🎉 You’ve been added to the waitlist.");
-      toast.success("You’re on the PitchMint waitlist 🎉", {
-        description: "We’ll notify you as soon as we launch.",
-        duration: 4000,
-      });
+      toast.success("You’re on the PitchMint waitlist 🎉");
       onSuccess();
     } else {
       toast.error("Something went wrong 😞", {
